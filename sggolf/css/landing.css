@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+img  {vertical-align: bottom;}
+.landing {width:1000px; margin: 0 auto; }
+.ev_bg1 {position: relative; width:1000px;}
+.ev_bg1 a{ position: absolute; bottom:12%; left:5%; z-index: 1; width: 90%;}
+.ev_bg2 {position: relative; width:1000px;}
+.ev_bg2 a{ position: absolute; top:5%; left:5%; z-index: 1; width: 90%;}
+.ev_bg3 {position: relative; width:1000px;}
+.ev_bg3 a{ position: absolute; bottom:31%; left:5%; z-index: 1; width: 90%;}
+
+
+.cc-wrap .cc-landing-wrap{position: relative; width:100%; margin: 0 auto; }
+
+.cc-wrap .cc-landing-wrap .swp-cc{overflow: hidden;}
+.cc-wrap .cc-landing-wrap .swp-cc .swiper-slide{opacity: 0.3;width: 1000px;transition: all 0.3s ease-out;}
+.cc-wrap .cc-landing-wrap .swp-cc .swiper-slide.swiper-slide-active{opacity: 1;}
+/* hm 240905 - e */
+.cc-wrap .cc-landing-wrap .swp-cc .swiper-slide .btn-video {display: block;position: absolute;top: 0;left: 0;z-index: 1;width: 100%;height: 100%;background: rgba(0,0,0,0.7);}
+.cc-wrap .cc-landing-wrap .swp-cc .swiper-slide .btn-video span {display: block;position: absolute;top: 50%;left: 50%;z-index: 1;text-align: center;font-size: 16px;line-height: 16px;color: #fff;transform: translate(-50%,-50%);}
+.cc-wrap .cc-landing-wrap .swp-cc .swiper-slide .btn-video span:before {content: "";display: block;width: 80px;height: 80px;margin: 0 auto 14px;background: url(../images/ico-video-play.png) no-repeat center center;background-size: contain;}
+.cc-wrap .cc-landing-wrap .swp-cc .swiper-slide .btn-video span:after {content: "";display: inline-block;width: 16px;height: 16px;margin-left: 8px;vertical-align: top;background: url(../images/ico-link.png) no-repeat center center;background-size: contain;}
+
+.cc-wrap .cc-landing-wrap .swp-navi{position: absolute; bottom:550px;left: 0;z-index: 1;width: 100%; }
+
+
+.cc-wrap .cc-landing-wrap .swp-btn-prev{display: inline-block;position: relative;width: 54px;height: 54px;padding:40px;vertical-align: top;background-repeat: no-repeat;background-position: center center;background-size: 50px auto; position:absolute; left:0;}
+.cc-wrap .cc-landing-wrap .swp-btn-next{display: inline-block;position: relative;width: 54px;height: 54px;padding:40px;vertical-align: top;background-repeat: no-repeat;background-position: center center;background-size: 50px auto; position:absolute; right:0;}
+.cc-wrap .cc-landing-wrap .swp-btn-prev{background-image: url(../images/event/btn_prev.png);}
+.cc-wrap .cc-landing-wrap .swp-btn-next{background-image: url(../images/event/btn_next.png);}
+
+.cc-wrap .cc-landing-wrap .swp-navi [aria-disabled="true"]{opacity: 0.2;}
+.cc-wrap .cc-landing-wrap .name-box{position: absolute;top: 50%;left: 0;z-index: 1;width: 440px;padding-right: 60px;text-align: right;font-size: 30px;font-weight: 500;line-height: 1.35em;color: #000;}
+
+
+
+.wrap {
+    max-width: 90%; 
+    margin: 50px auto 0; 
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 0; 
+    padding-bottom: 56.25%; 
+}
+
+.video iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+   
+} 
+
+.layer-pop{display:none;position:fixed;top:50%;left:50%;z-index:1000;width:calc(100% - 120px);height:auto;max-width:1000px;max-height:90%;transform:translate(-50%,-50%);}
+.layer-pop .close-pop{overflow:hidden;position:absolute;top:0;right:0;z-index:11;width:84px;height:84px;text-indent:-999px;font-size:0;background:url(../images/ico-close-pop.png) no-repeat center center;background-size:26px 24px; background-color: #fff;}
+.layer-pop .pop-cont{overflow-x:hidden;overflow-y:auto;position:relative;height:100%;padding:0 45px;background:#fff;}
+.pop_event {width:1000px; margin-top:0px; padding:10px; background-color: #fff;}
+.pop_event  img {width:100%;}
+.w {width:50px; background-color: #fff; height:50px; }
+
+.floating-banner1{position:fixed;bottom:50px;right:20px;z-index:10;width:200px;}
+
+
+/* .ev_bg1 p { position: absolute; bottom:10%; left:calc(100% - 90%); z-index: 1; width: 90%;}*/
+
+/* 패드,태블릿 (iPad 가로모드 이하) */
+@media screen and (max-width:1024px) and (min-width:768px){
+}
+
+/* 모바일 (768 미만) : hm 240908 */
+@media screen and (max-width:767px){
+  /* hm 반응형2차 - s */
+  .only-pc{display:none !important;}
+  .only-mo{display:block !important;}
+  /* hm 반응형2차 - e */
+
+.landing {width:100%; margin: 0 auto; }    
+.landing img {width:100%;}  
+.ev_bg1, .ev_bg2, .ev_bg3{width:100%; }    
+
+.cc-wrap .cc-landing-wrap .swp-cc .swiper-slide{opacity: 0.3;width:100%;transition: all 0.3s ease-out;}
+    
+.wrap {
+    max-width: 90%; 
+    margin: 20px auto 0; 
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 0; 
+    padding-bottom: 56.25%; 
+}
+
+.video iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+} 
+    
+.cc-wrap .cc-landing-wrap .swp-navi{position: absolute; bottom:220px;left: 0;z-index: 1;width: 100%; }
+
+
+.cc-wrap .cc-landing-wrap .swp-btn-prev{display: inline-block;position: relative;width: 54px;height: 54px;padding: 10px;vertical-align: top;background-repeat: no-repeat;background-position: center center;background-size: 25px auto; position:absolute; left:0;}
+.cc-wrap .cc-landing-wrap .swp-btn-next{display: inline-block;position: relative;width: 54px;height: 54px;padding: 10px;vertical-align: top;background-repeat: no-repeat;background-position: center center;background-size: 25px auto; position:absolute; right:0;}
+    
+.floating-banner1{position:fixed;bottom:150px;right:10px;z-index:10;width:80px;}    
+    
+.layer-pop{display:none;position:fixed;top:50%;left:50%;z-index:1000;width:calc(100% - 20px);height:auto;max-width:100%;max-height:90%;transform:translate(-50%,-50%);} 
+.layer-pop .close-pop{overflow:hidden;position:absolute;top:0;right:0;z-index:11;width:30px;height:30px;text-indent:-999px;font-size:0;background:url(../images/ico-close-pop.png) no-repeat center center;background-size:24px 22px; background-color: #fff;}
+.layer-pop .pop-cont{overflow-x:hidden;overflow-y:auto;position:relative;height:100%;padding:0 45px;background:#fff;}    
+.pop_event {width:100%; margin-top:0px; padding:10px; background-color: #fff;}

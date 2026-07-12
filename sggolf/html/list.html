@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>SG골프 project</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+<style>
+*{font-family:"Gothic A","고딕A",sans-serif;}
+
+.zip{border:1px solid #000;padding:10px;margin:10px 0;}
+.zip a{color:#666;font-size:12px}
+.zip p{line-height:0}
+
+.wrap{overflow:hidden;}
+table{width:100%;border:0;border-top:1px solid #434343;border-collapse:collapse;border-spacing:0;color:#353535;word-break:break-all;font-size:12px;}
+table tr:hover{background-color:#fafcce;}
+table th{padding:8px 0px;background:#f0f0f0;border-left:1px solid #e5e5e5;font-weight:600;text-align:center;}
+table th:first-child{border-left:none;}
+table td:first-child{border-left:none;}
+table tbody th{padding:8px;background:none;text-align:left;}
+table tbody td{padding:8px;border-left:1px solid #e5e5e5;}
+table tbody td{border-bottom:1px solid #e5e5e5;}
+table tbody td.bline{padding:0;background:#333;line-height:2px;}
+a:focus{color:red;}
+/* 수정 */
+.modify{color:red;}
+.modify strong{display:block;}
+/* 작업중 */
+tr.working th,tr.working td{background:#efffb0;}
+/* 부분완료 */
+tr.pub th,tr.pub td{background:#dfffc7;}
+/* 최종완료 */
+tr.complete th,tr.complete td{background:#ffc379 !important;}
+tr.complete.tablet-com th,tr.complete.tablet-com td{color:#fff;background:#225b95 !important;}
+tr.complete.tablet-com th a,tr.complete.tablet-com td a{color:#fff;}
+
+.feedback li:first-child{margin-bottom:10px;font-weight:700;color:#222;}
+.feedback li.clear{text-decoration:line-through;color:#5e5e5e;}
+.feedback li{color:#5e5e5e;}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<h1>SG 골프</h1>
+	<p class="count">총 페이지 수 : <strong id="total"></strong>개 / 레이어팝업 : <strong id="layer"></strong>개</p>
+	<div class="inner">
+		<table>
+			<colgroup>
+				<col width="3%" />
+				<col width="8%" />
+				<col width="8%" />
+				<col width="10%" />
+				<col width="14%" />
+				<col width="15%" />
+				<col width="5%" />
+				<col width="5%" />
+				<col width="5%" />
+				<col width="5%" />
+				<col width="*" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>구분</th>
+					<th>1depth</th>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>URL</th>
+					<th>작업현황</th>
+					<th>PC</th>
+					<th>MOBILE</th>
+					<th>Tablet</th>
+					<th>비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+				<tr>
+					<td></td>
+					<td>[공통]</td>
+					<td>레이아웃</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/layout.html" target="_blank">layout.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>PC는 모든 헤더가 동일함</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>서브헤더 - mobile only</td>
+					<td></td>
+					<td>
+						<a href="html/layout_sub01.html" target="_blank">layout_sub01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>PC는 모든 헤더가 동일함</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>서브헤더02 - mobile only</td>
+					<td>(뒤로가기 버튼만 존재하는 경우)</td>
+					<td>
+						<a href="html/layout_sub02.html" target="_blank">layout_sub02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>PC는 모든 헤더가 동일함</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td>00 홈</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="html/index.html" target="_blank">index.html</a>
+					</td>
+          <td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td>01 SG 가이드</td>
+					<td>SG TOUR 가이드</td>
+					<td>대회참가방법</td>
+					<td></td>
+					<td>
+						<a href="html/guide_tour01.html" target="_blank">guide_tour01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>대회정보</td>
+					<td></td>
+					<td>
+						<a href="html/guide_tour02.html" target="_blank">guide_tour02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>대회요강</td>
+					<td></td>
+					<td>
+						<a href="html/guide_tour03.html" target="_blank">guide_tour03.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>시상내역</td>
+					<td></td>
+					<td>
+						<a href="html/guide_tour04.html" target="_blank">guide_tour04.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>투어점수</td>
+					<td></td>
+					<td>
+						<a href="html/guide_tour05.html" target="_blank">guide_tour05.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>더매치 가이드</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/guide_match.html" target="_blank">guide_match.html</a>
+					</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>홀인온플러스 가이드</td>
+					<td>이벤트 참가방법</td>
+					<td></td>
+					<td>
+						<a href="html/guide_plus01.html" target="_blank">guide_plus01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>이벤트 요강</td>
+					<td></td>
+					<td>
+						<a href="html/guide_plus02.html" target="_blank">guide_plus02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>홀인원 잭팟 가이드</td>
+					<td>이벤트 참가방법</td>
+					<td></td>
+					<td>
+						<a href="html/guide_jackpot01.html" target="_blank">guide_jackpot01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>이벤트 요강</td>
+					<td></td>
+					<td>
+						<a href="html/guide_jackpot02.html" target="_blank">guide_jackpot02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>행운존 가이드</td>
+					<td>이벤트 참가방법</td>
+					<td></td>
+					<td>
+						<a href="html/guide_lucky01.html" target="_blank">guide_lucky01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>이벤트 요강</td>
+					<td></td>
+					<td>
+						<a href="html/guide_lucky02.html" target="_blank">guide_lucky02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td>02 대회</td>
+					<td>SG TOUR</td>
+					<td>리스트</td>
+					<td></td>
+					<td>
+						<a href="html/comp_tour_list.html" target="_blank">comp_tour_list.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 가이드</td>
+					<td>
+						<a href="html/comp_tour_pop.html" target="_blank">comp_tour_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>팝업 내 탭컨텐츠 5개</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>시상발표</td>
+					<td>스트로크</td>
+					<td>
+						<a href="html/comp_tour_view01.html" target="_blank">comp_tour_view01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>신페리오</td>
+					<td>
+						<a href="html/comp_tour_view02.html" target="_blank">comp_tour_view02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>롱기스트</td>
+					<td>
+						<a href="html/comp_tour_view03.html" target="_blank">comp_tour_view03.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>최다 이벤트</td>
+					<td>
+						<a href="html/comp_tour_view04.html" target="_blank">comp_tour_view04.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>최강매장</td>
+					<td>
+						<a href="html/comp_tour_view05.html" target="_blank">comp_tour_view05.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>행운상</td>
+					<td>
+						<a href="html/comp_tour_view06.html" target="_blank">comp_tour_view06.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 스코어</td>
+					<td>
+						<a href="html/comp_tour_view_score.html" target="_blank">comp_tour_view_score.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>랭킹</td>
+					<td>스트로크</td>
+					<td>
+						<a href="html/comp_tour_rank01.html" target="_blank">comp_tour_rank01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>신페리오</td>
+					<td>
+						<a href="html/comp_tour_rank02.html" target="_blank">comp_tour_rank02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>롱기스트</td>
+					<td>
+						<a href="html/comp_tour_rank03.html" target="_blank">comp_tour_rank03.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>최다 이벤트</td>
+					<td>
+						<a href="html/comp_tour_rank04.html" target="_blank">comp_tour_rank04.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>최강매장</td>
+					<td>
+						<a href="html/comp_tour_rank05.html" target="_blank">comp_tour_rank05.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 스코어</td>
+					<td>
+						<a href="html/comp_tour_rank_score.html" target="_blank">comp_tour_rank_score.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>더매치 TV</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/comp_matchtv.html" target="_blank">comp_matchtv.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>리스트</td>
+					<td></td>
+					<td>
+						<a href="html/comp_matchtv_list.html" target="_blank">comp_matchtv_list.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 상세</td>
+					<td>
+						<a href="html/comp_matchtv_list_pop.html" target="_blank">comp_matchtv_list_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>더매치 경기</td>
+					<td>대진표</td>
+					<td></td>
+					<td>
+						<a href="html/comp_match01.html" target="_blank">comp_match01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>스크린 예선 대회</td>
+					<td></td>
+					<td>
+						<a href="html/comp_match02.html" target="_blank">comp_match02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>대회요강</td>
+					<td>
+						<a href="html/comp_match02_04.html" target="_blank">comp_match02_04.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>* 2022-07-03 추가</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>시상발표</td>
+					<td>
+						<a href="html/comp_match02_01.html" target="_blank">comp_match02_01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>랭킹</td>
+					<td>
+						<a href="html/comp_match02_02.html" target="_blank">comp_match02_02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>랭킹 - 필드예선 진출자</td>
+					<td>
+						<a href="html/comp_match02_03.html" target="_blank">comp_match02_03.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>필드 예선 대회</td>
+					<td></td>
+					<td>
+						<a href="html/comp_match03.html" target="_blank">comp_match03.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>결과</td>
+					<td>
+						<a href="html/comp_match03_view.html" target="_blank">comp_match03_view.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>본선 대회</td>
+					<td></td>
+					<td>
+						<a href="html/comp_match04.html" target="_blank">comp_match04.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 챔피언십가이드</td>
+					<td>
+						<a href="html/comp_match_guide_pop.html" target="_blank">comp_match_guide_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>팝업 내 탭컨텐츠 4개</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>매장대회</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/comp_store.html" target="_blank">comp_store.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 가이드</td>
+					<td>
+						<a href="html/comp_store_pop.html" target="_blank">comp_store_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>팝업 내 탭컨텐츠 2개</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td>대회요강</td>
+					<td>
+						<a href="html/comp_store_detail01.html" target="_blank">comp_store_detail01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>랭킹</td>
+					<td>
+						<a href="html/comp_store_detail02.html" target="_blank">comp_store_detail02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>대회결과</td>
+					<td>
+						<a href="html/comp_store_detail03.html" target="_blank">comp_store_detail03.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>SG라이브</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/comp_live.html" target="_blank">comp_live.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>대회개설하기</td>
+					<td></td>
+					<td>
+						<a href="html/comp_live_write.html" target="_blank">comp_live_write.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>* 모바일에서는 개설하기 불가 (확인)</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 코스선택</td>
+					<td>
+						<a href="html/comp_live_write_pop.html" target="_blank">comp_live_write_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>* 모바일에서는 개설하기 불가 (확인)</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>MY SG 라이브</td>
+					<td></td>
+					<td>
+						<a href="html/comp_mylive.html" target="_blank">comp_mylive.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 비밀번호입력</td>
+					<td>
+						<a href="html/comp_mylive_pop.html" target="_blank">comp_mylive_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td>
+						<a href="html/comp_mylive_detail.html" target="_blank">comp_mylive_detail.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td>03 이벤트</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/event_list.html" target="_blank">event_list.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/event_view.html" target="_blank">event_view.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>당첨자발표 - 타입</td>
+					<td></td>
+					<td>
+						<a href="html/event_view02.html" target="_blank">event_view02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td>04 코스소개</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/course_main.html" target="_blank">course_main.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/course_detail.html" target="_blank">course_detail.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td>05 매장검색</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/store_main.html" target="_blank">store_main.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>매장상세</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/store_detail.html" target="_blank">store_detail.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 자세히보기</td>
+					<td>
+						<a href="html/store_detail_pop.html" target="_blank">store_detail_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>팝업 내 탭컨텐츠 3개</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td>06 홀인원</td>
+					<td>스페셜 샷(인증서)</td>
+					<td>스트로크</td>
+					<td></td>
+					<td>
+						<a href="html/one_special01.html" target="_blank">one_special01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>알바트로스</td>
+					<td></td>
+					<td>
+						<a href="html/one_special02.html" target="_blank">one_special02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>홀인온플러스</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/one_onplus.html" target="_blank">one_onplus.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>인증샷</td>
+					<td>리스트</td>
+					<td></td>
+					<td>
+						<a href="html/one_shot_list.html" target="_blank">one_shot_list.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td>
+						<a href="html/one_shot_view.html" target="_blank">one_shot_view.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>등록</td>
+					<td></td>
+					<td>
+						<a href="html/one_shot_write.html" target="_blank">one_shot_write.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>잭팟</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/one_jackpot.html" target="_blank">one_jackpot.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>* 안에 등록되는 이벤트 코딩을 반응형으로 해야함</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td>07 고객센터</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/cs_main.html" target="_blank">cs_main.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>FAQ</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/cs_faq.html" target="_blank">cs_faq.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>공지사항</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/cs_notice.html" target="_blank">cs_notice.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td>
+						<a href="html/cs_notice_view.html" target="_blank">cs_notice_view.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>1:1문의</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/cs_qna.html" target="_blank">cs_qna.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>이용약관</td>
+					<td>개인정보 취급방침</td>
+					<td></td>
+					<td>
+						<a href="html/cs_term_privacy.html" target="_blank">cs_term_privacy.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>2022-07-19 완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>이용약관</td>
+					<td></td>
+					<td>
+						<a href="html/cs_term_user.html" target="_blank">cs_term_user.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>2022-07-19 완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>위치정보 이용약관</td>
+					<td></td>
+					<td>
+						<a href="html/cs_term_location.html" target="_blank">cs_term_location.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>2022-07-19 완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>S포인트</td>
+					<td></td>
+					<td>
+						<a href="html/cs_term_spoint.html" target="_blank">cs_term_spoint.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>2022-07-19 완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>개인정보 제3자 제공</td>
+					<td></td>
+					<td>
+						<a href="html/cs_term_privacy02.html" target="_blank">cs_term_privacy02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>2022-07-19 완료</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td>08 MY</td>
+					<td>MY SG</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/my_sg.html" target="_blank">my_sg.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>S캐시</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/my_cash.html" target="_blank">my_cash.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 충전하기</td>
+					<td>
+						<a href="html/my_cash_pop.html" target="_blank">my_cash_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>* (디자인 없이 진행완료) 모바일 디자인 수급 필요</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>S포인트</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/my_point.html" target="_blank">my_point.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - S포인트란?</td>
+					<td>
+						<a href="html/my_point_pop.html" target="_blank">my_point_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>팝업 내 탭컨텐츠 3개</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>쿠폰함</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/my_coupon.html" target="_blank">my_coupon.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>1:1문의내역</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/my_qna.html" target="_blank">my_qna.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - FAQ</td>
+					<td>
+						<a href="html/my_qna_pop.html" target="_blank">my_qna_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>팝업 내 탭컨텐츠 4개</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>1:1문의하기</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/my_qna_write.html" target="_blank">my_qna_write.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>계정설정</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/my_account.html" target="_blank">my_account.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 비밀번호변경</td>
+					<td>
+						<a href="html/my_account_pw.html" target="_blank">my_account_pw.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 닉네임변경</td>
+					<td>
+						<a href="html/my_account_nick.html" target="_blank">my_account_nick.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 이메일변경</td>
+					<td>
+						<a href="html/my_account_email.html" target="_blank">my_account_email.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 휴대폰번호변경</td>
+					<td>
+						<a href="html/my_account_phone.html" target="_blank">my_account_phone.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>레이어팝업 - 회원탈퇴</td>
+					<td>
+						<a href="html/my_account_withdraw.html" target="_blank">my_account_withdraw.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+
+				<tr>
+					<td></td>
+					<td>09 멤버</td>
+					<td>로그인</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/mem_login.html" target="_blank">mem_login.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>회원가입</td>
+					<td>인증</td>
+					<td></td>
+					<td>
+						<a href="html/mem_join01.html" target="_blank">mem_join01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>약관동의</td>
+					<td></td>
+					<td>
+						<a href="html/mem_join02.html" target="_blank">mem_join02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>약관팝업</td>
+					<td>
+						<a href="html/mem_join02_pop.html" target="_blank">mem_join02_pop.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>2022-07-18 완료</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>정보입력</td>
+					<td></td>
+					<td>
+						<a href="html/mem_join03.html" target="_blank">mem_join03.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>가입완료</td>
+					<td></td>
+					<td>
+						<a href="html/mem_join04.html" target="_blank">mem_join04.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>아이디찾기</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/mem_findid01.html" target="_blank">mem_findid01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>완료</td>
+					<td></td>
+					<td>
+						<a href="html/mem_findid02.html" target="_blank">mem_findid02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>비밀번호찾기</td>
+					<td></td>
+					<td></td>
+					<td>
+						<a href="html/mem_findpw01.html" target="_blank">mem_findpw01.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>완료</td>
+					<td></td>
+					<td>
+						<a href="html/mem_findpw02.html" target="_blank">mem_findpw02.html</a>
+					</td>
+					<td>-</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>완료</td>
+					<td>-</td>
+				</tr>
+				<tr><td colspan="11" class="bline">&nbsp;</td></tr>
+			</tbody>
+		</table>
+
+		<p>[그 외 잔여작업]</p>
+		<ul class="feedback">
+			<li class="">2022-07-24 잔여작업 : 잭팟이벤트 모바일 작업</li>
+			<li class="clear">2022-07-24 수정사항 전체 완료</li>
+			<li class="clear">2022-07-19 고객센터 약관 완료</li>
+			<li class="clear">2022-07-18 잔여작업 : 이용약관코딩 / 잔여수정사항 재확인</li>
+			<li class="clear">2022-07-17 수정사항 반영</li>
+			<li class="clear">2022-07-13 태블릿 버전 완료</li>
+			<li class="clear">2022-07-10 수정사항 반영</li>
+			<li class="clear">2022-07-03 더매치경기 > 스크린예선대회 > 대회요강 페이지 추가 완료</li>
+			<li class="clear">2022-06-19 공지사항 View PC디자인 수급 필요</li>
+			<li class="clear">2022-06-19 레이어팝업 작업 시작</li>
+			<li class="clear">2022-06-17 MO 디자인 누락된 파일 수급</li>
+			<li class="clear">2022-06-13 MO 대회 테이블 데이터가 PC랑 너무 맞지않아 확인요청 필요</li>
+			<li class="clear">2022-06-11 MO 이벤트상세 당첨자발표 테이블 PC기준으로 작업</li>
+			<li class="clear">2022-05-25 추가 디자인 PSD 수급(01 SG 가이드 페이지6개)</li>
+		</ul>
+	</div>
+</div>
+
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("table tr").each(function(){
+		var pubStat = $(this).find("td:nth-child(7)");
+		var pcStat = $(this).find("td:nth-child(8)");
+		var moStat = $(this).find("td:nth-child(9)");
+		var taStat = $(this).find("td:nth-child(10)");
+		if(pcStat.text()== "작업중" || moStat.text() == "작업중"){
+			$(this).addClass("working");
+		}
+		if(pcStat.text()== "완료" || moStat.text() == "작업중"){
+			$(this).addClass("pub");
+		}
+		if(pcStat.text() == "완료" && moStat.text() == "완료"){
+			pubStat.text("완료");
+			$(this).addClass("complete");
+		}
+		if(taStat.text() == "완료"){
+			pubStat.text("최종완료");
+			$(this).addClass("tablet-com");
+		}
+	});
+
+	var layerCnt = 0;
+	$("table tbody tr td:first-child").not(".bline").each(function(idx){
+		var str = $(this).closest("tr").find("td").eq(4).text();
+		$(this).text(idx+1);
+		$("#total").text(idx+1);
+		if(str.indexOf("레이어팝업") != -1){
+			layerCnt++;
+			$("#layer").text(layerCnt);
+		}
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,859 @@
+@charset "utf-8";
+/* CSS Document */
+
+.blind {overflow: hidden;position: absolute;left: -9999px;width: 0;height: 0;text-indent: -9999px;font-size: 0;line-height: 0;}
+
+.layer-pop.full .sch-box .opt {
+  background-color: #f8f9f9;
+}
+
+.lotto {
+}
+.lotto .visual img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.lotto .ticket-box {
+  padding: 25px 25px 30px;
+  text-align: center;
+  background-color: #f3f6ff;
+}
+.lotto .ticket-box dl dt {
+  font-size: 15px;
+  color: #000;
+}
+.lotto .ticket-box dl dd {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #000;
+}
+.lotto .ticket-box dl dd span {
+  padding-right: 15px;
+}
+.lotto .ticket-box dl dd a {
+  position: relative;
+  padding-right: 12px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #000;
+}
+.lotto .ticket-box dl dd a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  margin-top: -2px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+}
+.lotto .ticket-box .btn-wrap {
+  margin-top: 15px;
+}
+.lotto .ticket-box .btn-wrap.btn-list li a {
+  height: 40px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.lotto .evt-btn-list li ~ li {
+  margin-top: 8px;
+}
+.lotto .evt-btn-list li a {
+  display: block;
+  position: relative;
+  height: 45px;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #272937;
+  background-color: #e4e7ee;
+}
+.lotto .evt-btn-list li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+  width: 11px;
+  height: 10px;
+  margin-top: -5px;
+  background: url(../images/ico-link03.png) no-repeat center center;
+  background-size: contain;
+}
+.lotto .btn-link-txt {
+  position: relative;
+  padding-right: 12px;
+  font-size: 15px;
+  color: #000;
+}
+.lotto .btn-link-txt:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  margin-top: -2px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+}
+.lotto .summary {
+  display: flex;
+  padding: 25px 20px;
+  border-radius: 5px;
+  background-color: #f3f6ff;
+}
+.lotto .summary .box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+}
+.lotto .summary .box .tit {
+  font-size: 15px;
+  color: #000;
+}
+.lotto .summary .txt {
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.lotto .summary .box .txt em {
+  font-weight: 400;
+}
+.lotto .summary.type02 {
+  justify-content: space-between;
+  padding: 25px 35px;
+  justify-content: space-between;
+}
+.lotto .summary.type02 .box {
+  flex: 0 auto;
+}
+.lotto .summary.type02 .box .txt {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 20px;
+}
+.lotto .summary.type02 .box .txt em {
+  margin-left: 5px;
+  font-size: 20px;
+}
+.lotto .summary.type02 .box.split {
+}
+.lotto .summary.type02 .box.split dl {
+  display: flex;
+  width: 100%;
+}
+.lotto .summary.type02 .box.split dl dt {
+  padding-right: 20px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 26px;
+}
+.lotto .summary.type02 .box.split dl dd {
+  flex: 1;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 26px;
+}
+.lotto .summary.type02 .box.split dl dd em {
+  margin-left: 2px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.lotto .num-sel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 369px;
+  padding: 12px;
+  margin: 0 auto;
+}
+.lotto .num-sel > span {
+  display: block;
+  flex: 0 40px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+  background: #e1e1e1 url(../images/bg-lotto-num.png) no-repeat center center;
+  background-size: cover;
+}
+.lotto .num-sel > span.range1 {
+  background: #ffcb17;
+}
+.lotto .num-sel > span.range2 {
+  background: #0073e9;
+}
+.lotto .num-sel > span.range3 {
+  background: #f13852;
+}
+.lotto .num-sel > span.range4 {
+  background: #46474b;
+}
+.lotto .num-sel > span.range5 {
+  background: #2ab206;
+}
+.lotto .num-sel > em {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #000;
+}
+.lotto .num-sel + .num-list {
+    border-top: 2px solid #000;
+}
+.lotto .num-sel.size-s {
+  max-width: 100%;
+  padding: 0 2px;
+}
+.lotto .num-sel.size-s > span {
+  flex: 0 28px;
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+  line-height: 28px;
+}
+.lotto .num-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 369px;
+  padding: 5px 5px 0;
+  margin: 0 auto;
+  font-size: 0;
+  white-space: wrap;
+}
+.lotto .num-list span[class*="range"] {
+  display: inline-block;
+  flex: 0 40px;
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  vertical-align: top;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000;
+  background-color: #e1e1e1;
+}
+.lotto .num-list span.range1.sel {
+  color: #fff;
+  background: #ffcb17;
+}
+.lotto .num-list span.range2.sel {
+  color: #fff;
+  background: #0073e9;
+}
+.lotto .num-list span.range3.sel {
+  color: #fff;
+  background: #f13852;
+}
+.lotto .num-list span.range4.sel {
+  color: #fff;
+  background: #46474b;
+}
+.lotto .num-list span.range5.sel {
+  color: #fff;
+  background: #2ab206;
+}
+.lotto .tbl-wrap {
+  margin-top: 30px;
+}
+.lotto .tbl-wrap table.no-padd thead th,
+.lotto .tbl-wrap table.no-padd tbody td {
+  padding: 10px 0;
+}
+.lotto .tbl-wrap table thead th {
+  padding: 10px;
+  color: #000;
+}
+.lotto .tbl-wrap table td .num-sel {
+  padding: 6px 0;
+}
+.lotto .tbl-wrap table td .num-sel.size-s {
+  padding: 0 4px;
+}
+.lotto .congratulation {
+  margin-top: 30px;
+}
+.lotto .congratulation .msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lotto .congratulation .msg i.icon {
+  display: block;
+  width: 51px;
+  height: 51px;
+  background: url(../images/ico-congratulation.png) no-repeat center center;
+  background-size: contain;
+}
+.lotto .congratulation .msg p {
+  padding-left: 20px;
+}
+.lotto .congratulation .msg strong {
+  display: block;
+  font-size: 20px;
+}
+.lotto .congratulation .msg span {
+  display: block;
+  margin-top: 2px;
+  font-size: 17px;
+  color: #9d9d9d;
+}
+.lotto .congratulation img.vis {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  vertical-align: top;
+}
+
+/* 여름맞이 S포인트 추가 - s */
+.summer-spoint {}
+.summer-spoint.type-bg {
+  background: #d5eae1;
+}
+.summer-spoint.type-bg .cont-box {
+  padding: 0 0 50px;
+  margin: 0 17px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.summer-spoint .visual img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.summer-spoint .txt-box {
+  padding: 30px 0;
+  text-align: center;
+}
+.summer-spoint .txt-box p {
+  line-height: 1.5;
+}
+.summer-spoint .txt-box p ~ p {
+  margin-top: 40px;
+}
+.summer-spoint .txt-box p.txt01 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+}
+.summer-spoint .txt-box p.txt02 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #686868;
+}
+.summer-spoint .tbl-wrap .info-date {
+  font-size: 14px;
+  color: #444343;
+}
+.summer-spoint .tbl-wrap .info-time {
+  font-size: 12px;
+}
+.summer-spoint .btn-wrap {
+  margin-top: 20px;
+}
+.summer-spoint .btn-wrap .btn-apply {
+  height: auto;
+  min-width: 235px;
+  padding: 9px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #fff;
+  background-color: #004a27;
+}
+.summer-spoint .f-logo img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.summer-spoint .my-spoint {
+  overflow: hidden;
+  margin: 0 17px;
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
+}
+.summer-spoint .my-spoint dt {
+  float: left;
+  width: 45%;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 33px;
+  background-color: #ffdf00;
+}
+.summer-spoint .my-spoint dd {
+  float: left;
+  width: 55%;
+  padding: 0 16px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 33px;
+  color: #cf000e;
+  background-color: #fff;
+}
+.summer-spoint .my-spoint dd strong {
+  padding-right: 2px;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 33px;
+}
+.summer-spoint .apply-history {
+  padding: 8px 17px 10px;
+  text-align: right;
+}
+.summer-spoint .apply-history .btn-link {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  color: #000;
+}
+.summer-spoint .cont-box .dday {
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+.summer-spoint .cont-box .dday dt {
+  display: inline-block;
+  padding: 3px 5px;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.summer-spoint .cont-box .dday dd {
+  display: inline-block;
+  padding: 3px 5px;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 33px;
+  color: #cf000e;
+}
+.summer-spoint .item-box {
+  padding: 20px 10px;
+}
+.summer-spoint .item-box .item-tit {
+  text-align: center;
+  font-size: 0;
+}
+.summer-spoint .item-box .item-tit img {
+  width: 100%;
+  max-width: 305px;
+}
+.summer-spoint .item-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.summer-spoint .item-box ul.single {
+  justify-content: center;
+}
+.summer-spoint .item-box ul li {
+  flex: 0 1 48%;
+  position: relative;
+  margin-top: 30px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.summer-spoint .item-box ul li.wide {
+  flex: 1 100%;
+}
+.summer-spoint .item-box ul li .inbox {
+  padding: 3px;
+}
+.summer-spoint .item-box ul li img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.summer-spoint .item-box ul li .info-name {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.075em;
+}
+.summer-spoint .item-box ul li .info-point {
+  text-align: center;
+  font-size: 11px;
+  color: #cf000e;
+}
+.summer-spoint .item-box ul li .info-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -15px;
+  right: -8px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.1;
+  background-color: #ffdf00;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.summer-spoint .item-box ul li .info-cnt {
+  display: block;
+  max-width: 110px;
+  padding: 0 5px 2px;
+  margin: 5px auto 0;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 18px;
+  background-color: #efefef;
+}
+.summer-spoint .item-box.type02 {
+  padding: 12px 0 0;
+}
+.summer-spoint .item-box.type02 ul li {
+  flex: 0 1 calc(50% - 9px);
+  position: relative;
+  margin-top: 18px;
+  border: 1px dotted #9d9d9d;
+  border-radius: 0;
+  box-shadow: none;
+}
+.summer-spoint .item-box.type02 ul li:hover .inbox:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.summer-spoint .item-box.type02 ul li:hover .inbox:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 2;
+  width: 46px;
+  height: 23px;
+  margin: -11px 0 0 -23px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+}
+.summer-spoint .item-box.type02 ul li:nth-child(2n) {
+  margin-left: 18px;
+}
+.summer-spoint .item-box.type02 ul li .inbox {
+  padding: 5px 10px 10px;
+}
+.summer-spoint .form-count {
+  display: block;
+  margin-top: 30px;
+}
+.summer-spoint .form-count dl {
+  width: 160px;
+  margin: 0 auto;
+}
+.summer-spoint .form-count dl dt {
+  padding-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.summer-spoint .form-count dl dd {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 2px;
+  border-radius: 8px;
+  background: #f5f6f8;
+}
+.summer-spoint .form-count dl dd input {
+  display: block;
+  float: left;
+  width: 88px;
+  height: 34px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.summer-spoint .form-count dl dd input[readonly] {
+  color: #000 !important;
+}
+.summer-spoint .form-count dl dd button {
+  display: block;
+  float: left;
+  width: 34px;
+  height: 34px;
+  font-size: 0;
+}
+.summer-spoint .form-count dl dd button img {
+  width: 34px;
+  height: 34px;
+  vertical-align: top;
+}
+
+/* 20240705 로또시즌3 */
+.lotto.season3 {}
+.lotto.season3 .mission-wrap {
+  margin: 30px -17px 0;
+}
+.lotto.season3 .mission-wrap .apply-btn {
+  height: 114px;
+  background-image:url(../html/event/2024/0705/images/0705_ev_img01.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.lotto.season3 .mission-wrap .apply-btn ~ .apply-btn {
+  margin-top: 7px;
+}
+.lotto.season3 .mission-wrap .apply-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 17px;
+}
+.lotto.season3 .mission-wrap .apply-btn a span {
+  display: block;
+  word-break: keep-all;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  color: #fff;
+  filter: drop-shadow(rgba(0,0,0,0.3) 1px 1px 2px);
+}
+.lotto.season3 .mission-wrap .apply-btn a em {
+  display: block;
+  position: relative;
+  height: 36px;
+  padding: 0 62px 0 26px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 36px;
+  white-space: nowrap;
+  color: #21526b;
+  background-color: #ffeb3c;
+}
+.lotto.season3 .mission-wrap .apply-btn a em:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  border-left: 1px solid #21526b;
+  background: url(../images/ico-arrow-dotted.png) no-repeat center center;
+  background-size: auto 15px;
+}
+.lotto.season3 .mission-wrap .apply-btn.type02 {
+  background-image:url(../html/event/2024/0705/images/0705_ev_img02.png);
+}
+.lotto.season3 .mission-wrap .apply-btn.type02 em {
+  background-color: #baff3c;
+}
+.lotto.season3 .mission-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 114px;
+  padding: 0 17px;
+  margin: 0 -17px;
+  background-image:url(../html/event/2024/0705/images/0705_ev_img01.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.lotto.season3 .mission-msg.type02 {
+  background-image:url(../html/event/2024/0705/images/0705_ev_img02.png);
+}
+.lotto.season3 .mission-msg strong {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+}
+.lotto.season3 .mission-msg span {
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #fff;
+}
+.lotto.season3 .mission-list {
+  margin-top: 42px;
+  border-top: 2px solid #000;
+}
+.lotto.season3 .mission-list .item {
+  position: relative;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.lotto.season3 .mission-list .item strong {
+  display: block;
+  font-size: 17px;
+  color: #434343;
+}
+.lotto.season3 .mission-list .item span {
+  display: block;
+  font-size: 13px;
+  color: #3f50ff;
+}
+.lotto.season3 .mission-list .item a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  z-index: 1;
+  width: 83px;
+  height: 40px;
+  margin-top: -20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #5a68f7;
+}
+.lotto.season3 .mission-list .item a.complete {
+  cursor: default;
+  background-color: #cbccda;
+}
+
+/* 20240705 (0228/event_240228_mo.html) */
+.lotto.cont-ev img {
+  vertical-align: top;
+}
+.lotto.cont-ev .my-stat {
+  position: relative;
+}
+.lotto.cont-ev .my-stat .stat-box {
+  display: flex;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 1;
+  width: 100%;
+  padding: 0 10%;
+  transform: translate(-50%,-50%);
+}
+.lotto.cont-ev .my-stat .stat-box .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.lotto.cont-ev .my-stat .stat-box .box .tit {
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+}
+.lotto.cont-ev .my-stat .stat-box .box .cont {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+.lotto.cont-ev .my-stat .stat-box .box .cont em {
+  padding-left: 3px;
+  font-size: 15px;
+  font-style: normal;
+}
+.lotto.cont-ev .prize {
+  position: relative;
+}
+.lotto.cont-ev .prize .stat-box {
+  display: flex;
+  position: absolute;
+  top: 19.5%;
+  left: 50%;
+  z-index: 1;
+  width: 100%;
+  padding: 0 10%;
+  transform: translate(-50%,-50%);
+}
+.lotto.cont-ev .prize .stat-box .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.lotto.cont-ev .prize .stat-box .box .tit {
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+}
+.lotto.cont-ev .prize .stat-box .box .cont {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+.lotto.cont-ev .prize .stat-box .box .cont em {
+  padding-left: 3px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+.lotto.cont-ev .prize .stat-box .box .total {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.lotto.cont-ev .btn-folding {
+  display: block;
+  position: relative;
+}
+.lotto.cont-ev .btn-folding:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 11%;
+  z-index: 1;
+  width: 4%;
+  height: 100%;
+  transform: rotate(0);
+  background: url(../images/ico-folding-arrow.png) no-repeat center center;
+  background-size: contain;
+}
+.lotto.cont-ev .btn-folding.closed:after {
+  transform: rotate(-180deg);
+}

@@ -1,0 +1,886 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<title>SG GOLF</title>
+<meta name="keywords" content="The Screen SG골프">
+<meta name="description" content="SG골프 창업 및 문의 1566-0076">
+<link rel="shortcut icon" href="https://image-golf.sggolf.com/images/screen/favicon/sg.ico">
+<link rel="canonical" href="http://sggolf.com/" />
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common_ui.js"></script>
+<!-- //resources -->
+</head>
+<body>
+<!-- gnbUtil -->
+
+
+<!-- header -->
+<!-- //header -->
+
+<!-- contents -->
+<div class="contents">
+  <div class="navigator">
+    <ul>
+      <li><a href="javascript:;" class="navi-home">홈</a></li>
+      <li>대회</li>
+      <li>SG LIVE</li>
+    </ul>
+  </div>
+  <div class="comp-wrap">
+    <div class="sub-visual live only-pc">
+      <div class="inner">
+        <div class="tblcell">
+          <div class="txt-box">
+            <p class="txt01">SG LIVE</p>
+            <p class="txt02">
+              함께 즐기는 SG골프!<br>
+              친구, 동호회, 사내대회, 누구나 즐길 수 있는<br>
+              나만의 대회를 만들어 보세요.
+            </p>
+            <p class="txt03">
+              SG LIVE는 <img src="../images/sub/logo-vision02.png" alt=""> Vision Premium을 이용해 주세요.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner no-tit live-wrap">
+      <div class="form-wrap">
+        <div class="form-item">
+          <div class="banner-write-wrap">
+            <img src="../images/temp/banner-bg-1200x240.png" alt="">
+            <div class="inp point-bg">
+              <textarea name="" placeholder="대회 제목을 입력해 주세요."></textarea>
+            </div>
+          </div>
+          <div id="swpBannerBg" class="banner-write-bg">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:;"><div class="not-use">배너 사용하지 않음</div></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"><img src="../images/temp/banner-bg-1200x240.png" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"><img src="../images/temp/banner-bg-1200x240.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <p class="msg alert">※ 제목 최대 입력 글자수는 30자 입니다.</p>
+          <p class="msg alert">※ 템플릿을 활용하여 나만의 대회 베너를 만들어 보세요.</p>
+        </div>
+        <div class="form-item">
+          <div class="inp textarea-bg">
+            <textarea name="" placeholder="대회 개요를 입력해 주세요."></textarea>
+          </div>
+        </div>
+        <div class="form-item">
+          <p class="form-tit">대회기간</p>
+          <div class="date-term">
+            <div class="inp">
+              <input type="text" name="" placeholder="시작일">
+              <a href="javascript:;" class="btn-calendar"><img src="../images/ico-calendar.png" alt=""></a>
+            </div>
+            <i>~</i>
+            <div class="inp">
+              <input type="text" name="" placeholder="종료일">
+              <a href="javascript:;" class="btn-calendar"><img src="../images/ico-calendar.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="form-item">
+          <p class="form-tit">대회코스</p>
+          <!-- 코스 미선택 시 -->
+          <div class="course-list">
+            <div class="list">
+              <div class="item">
+                <a href="javascript:;" class="btn-add"><span>대회 코스를 선택해 주세요.</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- //코스 미선택 시 -->
+
+          <!-- 코스 선택 시 -->
+          <div class="course-list">
+            <div class="list">
+              <div class="item">
+                <a href="javascript:;">
+                  <div class="imgbox"><img src="../images/temp/banner-368x213.png" alt=""></div>
+                  <p class="tit">태광 정산</p>
+                  <dl>
+                    <dt>코스난이도</dt><dd><span class="point-star col-yellow star-30 h16">평점3</span></dd>
+                  </dl>
+                  <dl>
+                    <dt>그린난이도</dt><dd><span class="point-star col-mint star-20 h16">평점2</span></dd>
+                  </dl>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- //코스 선택 시 -->
+        </div>
+      </div>
+
+      <!-- tab-menu -->
+      <ul class="tab-menu type02">
+        <li class="menu active"><a href="#cont01" onclick="toggleTabCont(this);">템플릿 사용</a></li>
+        <li class="menu"><a href="#cont02" onclick="toggleTabCont(this);">직접등록</a></li>
+      </ul>
+      <!-- //tab-menu -->
+      <!-- tab-cont -->
+      <div class="tab-cont">
+        <div id="cont01" class="cont active">
+          <div id="swpTemplete" class="bg-templete">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:;"><img src="../images/temp/banner-350x275.png" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"><img src="../images/temp/banner-350x275.png" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:;"><div class="not-use">배경 이미지 사용하지 않음</div></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div id="cont02" class="cont">
+          <div class="form-wrap">
+            <div class="form-item">
+              <p class="form-tit">배경 이미지 직접 등록하기</p>
+              <div class="file-inp w560">
+                <input type="file" name="" value="">
+                <label for="">파일선택</label>
+              </div>
+              <p class="msg alert">※ 템플릿을 활용하여 나만의 대회 베너를 만들어 보세요.</p>
+              <p class="msg alert">※ 1200 X 945 사이즈의 jpg, png 이미지를 올려주세요. 다른 비율의 이미지 등록 시 이미지가 손상될 수 있습니다.</p>
+              <div class="selected-bg">
+                <img src="../images/temp/banner-560x440.png" alt="">
+                <a href="javascript:;" class="btn-del"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //tab-cont -->
+
+      <div class="form-wrap mt40">
+        <div class="form-item">
+          <p class="form-tit">롱기스트홀</p>
+          <div class="inp w560">
+            <select id="">
+              <option>롱기스트홀을 선택해 주세요.</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-item">
+          <p class="form-tit">니어리스트홀</p>
+          <div class="inp w560">
+            <select id="">
+              <option>니어리스트홀을 선택해 주세요.</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-item">
+          <p class="form-tit">시상규모</p>
+          <div class="inp">
+            <div class="inp">
+              <textarea name="" placeholder="시상 규모를 입력해 주세요."></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-item">
+          <p class="form-tit">라이브 컨디셔너 설정</p>
+          <div class="tbl-wrap02 type02 col03">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th>난이도</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>SG챔피언</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>홀컵위치</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>랜덤</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>바람</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>랜덤</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>좌우 그린 설정</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>랜덤</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>매트 룰</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>켜기</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>바람적용방식</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>시스템 동일</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th>OB 지역</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>켜기</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>날씨</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>맑음</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>컨시드</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>1.5m</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>남자티위치</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>black</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>퍼팅이어하기</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>켜기</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>그린경도</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>보통</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th>스윙플레이트</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>끄기</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>그린난이도</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>약간빠름</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>멀리건</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>2</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>여자티위치</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>yellow</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>그린화면조정</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>끄기</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>OB 룰</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>기존룰</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="form-item">
+          <p class="form-tit">핸디</p>
+          <div class="tbl-wrap02 type02 col04">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th class="col-blue03">알(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-blue03">참새(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-blue03">매(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-blue03">골드독수리(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-blue03">콘돌(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-blue03">피닉스(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th class="col-red02">알(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-red02">참새(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-red02">매(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-red02">골드독수리(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-red02">콘돌(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-red02">피닉스(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th class="col-blue03">병아리(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-blue03">까치(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-blue03">실버독수리(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-blue03">알바트로스(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-blue03">오스트리치(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-blue03">피닉스챔피언(남)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th class="col-red02">병아리(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-red02">까치(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-red02">실버독수리(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-red02">알바트로스(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-red02">오스트리치(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-red02">피닉스챔피언(여)</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 실력등급 변경에 따른 수정 -->
+        <div class="form-item">
+          <p class="form-tit">핸디</p>
+          <!-- <div class="tbl-wrap02 type02 col03">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th>알</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>까치</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>독수리</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>여성 핸디 설정</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th>병아리</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>학</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>독수리S</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th>참새</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>매</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>독수리SS</th>
+                  <td class="inp">
+                    <select id="">
+                      <option>0</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+          
+          <div class="div-tbl col03">
+            <div class="dis-cell">
+              <div class="dis-th">알</div>
+              <div class="dis-td inp">
+                <select id="">
+                  <option>0</option>
+                </select>
+              </div>
+            </div>
+            <div class="dis-cell">
+              <div class="dis-th">병아리</div>
+              <div class="dis-td inp">
+                <select id="">
+                  <option>0</option>
+                </select>
+              </div>
+            </div>
+            <div class="dis-cell">
+              <div class="dis-th">참새</div>
+              <div class="dis-td inp">
+                <select id="">
+                  <option>0</option>
+                </select>
+              </div>
+            </div>
+            <div class="dis-cell">
+              <div class="dis-th">까치</div>
+              <div class="dis-td inp">
+                <select id="">
+                  <option>0</option>
+                </select>
+              </div>
+            </div>
+            <div class="dis-cell">
+              <div class="dis-th">학</div>
+              <div class="dis-td inp">
+                <select id="">
+                  <option>0</option>
+                </select>
+              </div>
+            </div>
+            <div class="dis-cell">
+              <div class="dis-th">매</div>
+              <div class="dis-td inp">
+                <select id="">
+                  <option>0</option>
+                </select>
+              </div>
+            </div>
+            <div class="dis-cell">
+              <div class="dis-th">독수리</div>
+              <div class="dis-td inp">
+                <select id="">
+                  <option>0</option>
+                </select>
+              </div>
+            </div>
+            <div class="dis-cell">
+              <div class="dis-th">독수리S</div>
+              <div class="dis-td inp">
+                <select id="">
+                  <option>0</option>
+                </select>
+              </div>
+            </div>
+            <div class="dis-cell">
+              <div class="dis-th">독수리SS</div>
+              <div class="dis-td inp">
+                <select id="">
+                  <option>0</option>
+                </select>
+              </div>
+            </div>
+            <div class="dis-cell">
+              <div class="dis-th">여성 핸디 설정</div>
+              <div class="dis-td inp">
+                <select id="">
+                  <option>0</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //실력등급 변경에 따른 수정 -->
+
+        <div class="form-item">
+          <p class="form-tit">공개여부 선택</p>
+          <div class="form-group point-bg">
+            <ul class="rdo-toggle">
+              <li>
+                <input type="radio" name="openType" id="openType_open" checked>
+                <label for="openType_open">공개</label>
+              </li>
+              <li>
+                <input type="radio" name="openType" id="openType_private">
+                <label for="openType_private">비공개</label>
+              </li>
+            </ul>
+            <div class="inp h40">
+              <label for=""><input type="password" maxlength="4" placeholder="비밀번호 4자리 입력" value="" disabled></label>
+            </div>
+          </div>
+        </div>
+        <div class="form-item">
+          <p class="form-tit">공개여부 선택</p>
+          <div class="form-group point-bg">
+            <ul class="rdo-toggle">
+              <li>
+                <input type="radio" name="openType" id="openType_open">
+                <label for="openType_open">공개</label>
+              </li>
+              <li>
+                <input type="radio" name="openType" id="openType_private" checked>
+                <label for="openType_private">비공개</label>
+              </li>
+            </ul>
+            <div class="inp h40">
+              <label for=""><input type="password" maxlength="4" placeholder="비밀번호 4자리 입력" value=""></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="term-wrap">
+        <div class="agree-list">
+          <ul>
+            <li>
+              <div class="chkbox">
+                <input type="checkbox" name="agree-terms" id="agree-terms01">
+                <label for="agree-terms01">
+                  SG라이브 <span class="deco-underline">이용약관</span>을 확인하였으며, 서비스 이용에 동의합니다.
+                </label>
+              </div>
+              <a href="javascript:;" class="deco-underline">자세히</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="btn-wrap fix-bottom">
+        <a href="javascript:;" class="size-m btn-gray">취소</a>
+        <a href="javascript:;" class="size-m">SG LIVE 대회 개설하기</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //contents -->
+
+<!-- footer -->
+<!-- //footer -->
+
+<!-- script -->
+<script type="text/javascript">
+var swpBannerBg = new Swiper("#swpBannerBg .swiper-container",{
+  speed:300,
+  loop:true,
+  slidesPerView:"auto",
+  spaceBetween:22,
+  pagination:{
+    el:"#swpBannerBg .swiper-pagination",
+    clickable:true
+  },
+  navigation:{
+    nextEl:"#swpBannerBg .swiper-button-next",
+    prevEl:"#swpBannerBg .swiper-button-prev"
+  },
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView:3
+    }
+  }
+});
+var swpTemplete = new Swiper("#swpTemplete .swiper-container",{
+  speed:300,
+  loop:true,
+  slidesPerView:"auto",
+  spaceBetween:22,
+  pagination:{
+    el:"#swpTemplete .swiper-pagination",
+    clickable:true
+  },
+  navigation:{
+    nextEl:"#swpTemplete .swiper-button-next",
+    prevEl:"#swpTemplete .swiper-button-prev"
+  },
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      centeredSlides:true,
+      slidesPerView:3
+    }
+  }
+});
+$(window).resize(function(){
+  swpBannerBg.update();
+  swpTemplete.update();
+});
+</script>
+<!-- //script -->
+
+</body>
+</html>
