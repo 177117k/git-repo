@@ -12,29 +12,63 @@ function resizePop(el) {
   cont.css("max-height", maxHei + "px");
   // $(window).resize();  /* 20230127 퍼블리싱 수정 */
 }
+
+/* 20260713 수정 - s */
 function openPop(el) {
   var target = $(el);
+  var isBottomSheet = target.hasClass("type-bottom");
+
   target.stop().addClass("active-pop").fadeIn(200);
+
   if ($(".dimmed").length > 0) {
-    target.css("margin", "20px 0 0 20px");
+    if (isBottomSheet) {
+      target.css("margin", "0");
+      $(".dimmed").css("z-index", "1001");
+      target.css("z-index", "1002");
+    } else {
+      target.css("margin", "20px 0 0 20px");
+      $(".dimmed").css("z-index", "900");
+      target.css("z-index", "1000");
+    }
   } else {
     var dimmed = '<div class="dimmed"></div>';
     $("body").css("overflow", "hidden").append(dimmed);
+
+    if (isBottomSheet) {
+      $(".dimmed").css("z-index", "1001");
+      target.css("z-index", "1002");
+    } else {
+      $(".dimmed").css("z-index", "900");
+      target.css("z-index", "1000");
+    }
   }
+
   resizePop(el);
   $(window).resize();
 }
 function closePop(el) {
   var target = $(el);
-  if (!target) target = $(".layer-pop.active-pop");
+  if (!target || target.length === 0) target = $(".layer-pop.active-pop").last();
+
   target.stop().removeClass("active-pop").fadeOut(200);
+  target.css("margin", "").css("z-index", "");
   $("body").css("overflow", "");
 
   if ($(".active-pop").length > 0) {
+    var activeLayer = $(".layer-pop.active-pop").last();
+
+    if (activeLayer.hasClass("type-bottom")) {
+      $(".dimmed").css("z-index", "1001");
+      activeLayer.css("z-index", "1002");
+    } else {
+      $(".dimmed").css("z-index", "900");
+      activeLayer.css("z-index", "1000");
+    }
   } else {
     $(".dimmed").remove();
   }
 }
+/* 20260713 수정 - e */
 
 //푸터 패밀리 사이트
 function toggleFamilySite() {

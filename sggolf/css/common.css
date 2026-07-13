@@ -139,6 +139,7 @@ COMMON UI
 .btn-wrap .btn-purple02{color:#fff;background-color:#9784fb;}
 .btn-wrap .btn-purple-outline{border:2px solid #8854e8;color:#8854e8;background-color:transparent;}
 .btn-wrap .btn-blue{color:#fff;background-color:#5a68f7;}
+.btn-wrap .btn-red{color:#fff;background-color:#d44431;}
 .btn-wrap .btn-white{padding:13px 20px;border:2px solid #fff;border-radius:30px;color:#fff;background-color:transparent;}
 .btn-wrap .btn-outline{padding:13px;border:1px solid #242424;border-radius:0;color:#000;background-color:#fff;}
 .btn-wrap .btn-outline.size-s{border-radius:0;}
@@ -602,9 +603,17 @@ LAYER POPUP - 작업중!!!!!!!!!!!!!!!!!
 .layer-pop .pop-cont .box .form-wrap .rdo label input{display:inline-block;}
 .layer-pop .pop-cont .box .form-wrap .rdo .inp.with-unit{position:relative;padding-right:43px;}
 .layer-pop .pop-cont .box .form-wrap .rdo .inp.with-unit .unit{position:absolute;top:0;right:0;z-index:1;width:43px;height:55px;}
+/* 20260713 수정 - s */
+.layer-pop .pop-cont .box .img-box{text-align:center;}
+.layer-pop .pop-cont .box .img-box img{width:100%;height:auto;max-width:100%;}
+/* 20260713 수정 - e */
 .layer-pop .btn-wrap{margin-top:20px;}
 .layer-pop .btn-wrap a, .layer-pop .btn-wrap button{height:56px;padding:14px 25px 12px;}
 .layer-pop .btn-wrap a.size-s, .layer-pop .btn-wrap button.size-s{height:auto;padding:7px 20px 8px;} /* 실력등급 변경에 따른 수정 */
+/* 20260713 수정 - s */
+.layer-pop .btn-wrap .btn-link-purple2{height:36px;min-width:130px;padding:9px 18px 10px;border:1px solid #8854e8;border-radius: 20px;font-size:15px;line-height:17px;color:#8854e8;background-color:transparent;}
+.layer-pop .btn-wrap .btn-link-purple2:after{content:"";display:inline-block;width:14px;height:100%;margin-left:5px;vertical-align:top;background:url(../images/ico-link-purple.png) no-repeat center center;background-size:contain;}
+/* 20260713 수정 - e */
 .layer-pop .filter-btns{padding:1px 0 0 1px;background:#fff;}
 .layer-pop .filter-btns .opt{float:left;width:20%;padding:0;}
 .layer-pop .filter-btns.nth03 .opt{float:left;width:33.33%;width:calc(100%/3);padding:6px 8px;}
@@ -672,6 +681,26 @@ LAYER POPUP - 작업중!!!!!!!!!!!!!!!!!
 /* 여름맞이 S포인트 추가 - s */
 .layer-pop.alert .pop-cont .txt02{padding:45px 0 0;text-align:center;font-size:25px;font-weight:500;color: #333;}
 /* 여름맞이 S포인트 추가 - e */
+
+/* 20260713 수정 - s */
+.layer-pop.type-bottom{top:auto;bottom:0;transform:translateX(-50%);} 
+.layer-pop.type-bottom .pop-cont{padding:0 24px 24px;}
+.layer-pop.type-bottom .pop-cont .tit{position:static;border-bottom:0;}
+.layer-pop.type-bottom .product-list{display:flex;flex-direction:column;gap:5px;margin-top:16px;}
+.layer-pop.type-bottom .product-item{display:flex;align-items:center;padding:5px 16px;border:1px solid #d9d9d9;border-radius:14px;background:#fff;}
+.layer-pop.type-bottom .product-item.active{border-color:#be9ef9;background:#fff;}
+.layer-pop.type-bottom .product-item__img{display:flex;align-items:center;justify-content:center;width:auto;height:75px;margin-right:20px;}
+.layer-pop.type-bottom .product-item__img img{display:block;max-width:100%;max-height:100%;object-fit:contain;}
+.layer-pop.type-bottom .product-item__name{flex:1;text-align:left;font-size:16px;line-height:1.3;color:#333;}
+.layer-pop.type-bottom .product-item__price{font-size:16px;font-weight:700;text-align:right;color:#1e1f25;white-space:nowrap;}
+.layer-pop.type-bottom .qty-form{display:flex;align-items:center;justify-content:space-between;padding:5px 16px;margin-top:12px;border:1px solid #d9d9d9;border-radius:14px;background:#fff;}
+.layer-pop.type-bottom .qty-form__label{font-size:16px;font-weight:500;color:#333;}
+.layer-pop.type-bottom .qty-form__control{display:flex;align-items:center;gap:4px;}
+.layer-pop.type-bottom .qty-btn{width:35px;height:35px;border-radius:50%;background:#e9ebef;text-align:center;font-size:18px;line-height:1;color:#333;}
+.layer-pop.type-bottom .qty-input{width:160px;height:44px;padding:0 8px;margin-right:8px;border:1px solid #d9d9d9;text-align:center;font-size:15px;font-weight:700;color:#1e1f25;background:#fff;}
+.layer-pop.type-bottom .qty-input[readonly]{border:1px solid #d9d9d9 !important;color:#1e1f25 !important;background:#fff !important;}
+.layer-pop.type-bottom .btn-wrap{margin-top:20px;}
+/* 20260713 수정 - e */
 
 .only-pc{display:block !important;}
 col.only-pc{display:table-column !important;}
@@ -1142,6 +1171,13 @@ th.only-pc, td.only-pc{display:table-cell !important;}
   .layer-pop.alert .pop-cont .txt i{margin:0 auto 15px;}
   .layer-pop.alert .pop-cont .btn-wrap a,
   .layer-pop.alert .pop-cont .btn-wrap button{width: 100%;}
+
+  /* 20260713 수정 - s */
+  .layer-pop.type-bottom .pop-cont{padding: 0;margin: 0;border-radius:14px 14px 0 0;background: #fff;}
+  .layer-pop.type-bottom .product-list{margin-top:4px;}
+  .layer-pop.type-bottom .product-item__img{width:auto;height:50px;margin-right:10px;}
+  .layer-pop.type-bottom .qty-input{width:80px;}
+  /* 20260713 수정 - e */
 }
 
 
