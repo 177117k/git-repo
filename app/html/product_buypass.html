@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+	
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="Keywords" content="SG골프">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	
+	<title>SG골프</title>
+	
+	<link  rel="stylesheet" type="text/css" href="../css/style.css" />
+<!--        <link rel="stylesheet" type="text/css" href="/fonts/xei/2.1.2/xeicon.min.css">-->
+	<link rel="stylesheet" type="text/css" href="../../fonts/xei//2.1.2/xeicon.min.css">
+
+	<script type="text/javascript" src="../../scripts/app/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="../../scripts/app/slick.min.js"></script>
+	<script type="text/javascript" src="../../scripts/app/common.js"></script>
+	<script type="text/javascript" src="../../scripts/app/layerPopup.js"></script>
+	<script type="text/javascript" src="../../scripts/app/jquery.bxslider.min.js"></script>
+	
+</head>
+	
+<body>
+		
+<div class="wrap"><!-- //뒷배경 색상 변경 클래스 whiteBg -->
+	<!-- header -->
+	<div id="header">
+		<div class="inner">
+			<h1>홀인온+ 이용권 구매</h1>
+			<a href="#" class="btnClose" title="닫기">닫기</a>
+		</div>
+	</div>
+	<!-- //header -->
+
+
+	<!-- container -->
+	<div class="container1">
+    
+		<section class="buyPass">
+			<div class="imgBox">
+        <img src="../images/buypass_img.png" alt="" />
+      </div>
+			<p class="subTit marT_30">홀인온플러스 이벤트</p>
+      <div class="subCont">
+        <p>※ 2025년 9월 1일(월)부터 니어 축하금이 변경됩니다. (사용일 기준)</p>
+        <div class="btnWrap">
+          <a href="javascript:;" class="btnLink">자세히 보기</a>
+        </div>
+        <ul class="dotList">
+          <li>이벤트명<br>
+            홀인온플러스</li>
+          <li>이벤트 내용<br>
+            보유한 홀인온플러스 이용권을 사용하여, 18홀 스트로크방식 경기 모드 (SG골프 시스템 상 메뉴 스트로크 모드, 대회모드, 네트워크 모드, 더매치 온라인모드 등)에 참여하여 Par3 홀에서 홀인원 하는 경우 축하금이 지급됩니다.</li>
+          <li>참가방법
+            <ul>
+              <li>1) 이용권 구매<br>
+                홀인온플러스 이용권 구매 (SG골프 앱 또는 매장 카운터 문의)</li>
+              <li>2) 이용권 사용<br>
+                인게임 로그인 화면에서 [홀인OFF]를 선택하여 [홀인ON]으로 이용권 사용 or SG골프 앱에서 홀인온+ 사용 선택하여 이용권 사용</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+		</section>
+		
+		<div class="btnWrap fixBtn">
+			<button type="button" class="btn">홀인온+ 구매하기</button>
+		</div>
+		
+	</div>
+	<!-- //container -->
+</div>
+
+
+<!-- <div class="deemLayer"></div> -->
+<!-- 구매상품 팝업 (바텀시트) -->
+<div class="layerPop bottomSheet" id="passPurshace" style="display: none;">
+	<div class="inner">
+		<h2 class="popTitle">구매 상품</h2>
+		<div class="scroller">
+			<p class="subTit">상품 선택</p>
+			<div class="subCont">
+				<div class="productList">
+					<button type="button" class="productItem active" data-value="190000">
+						<span class="productItem_img"><img src="../images/ico_pass1.png" alt=""></span>
+						<span class="productItem_name">단품</span>
+						<span class="productItem_price">1,500원</span>
+					</button>
+					<button type="button" class="productItem" data-value="290000">
+						<span class="productItem_img"><img src="../images/ico_pass2.png" alt=""></span>
+						<span class="productItem_name">20+2개 세트</span>
+						<span class="productItem_price">19,900원</span>
+					</button>
+					<button type="button" class="productItem" data-value="290000">
+						<span class="productItem_img"><img src="../images/ico_pass3.png" alt=""></span>
+						<span class="productItem_name">30+3개 세트</span>
+						<span class="productItem_price">28,800원</span>
+					</button>
+					<button type="button" class="productItem" data-value="290000">
+						<span class="productItem_img"><img src="../images/ico_pass4.png" alt=""></span>
+						<span class="productItem_name">40+4개 세트</span>
+						<span class="productItem_price">49,500원</span>
+					</button>
+				</div>
+
+				<div class="qtyForm">
+					<span class="qtyForm_label">구매수량</span>
+					<div class="qtyForm_control">
+						<input type="tel" class="qtyInput" value="3" readonly aria-label="구매수량">
+						<button type="button" class="qtyBtn" aria-label="수량 감소">-</button>
+						<button type="button" class="qtyBtn" aria-label="수량 증가">+</button>
+					</div>
+				</div>
+			</div>
+			<div class="btnWrap fixBtn">
+				<button type="button" class="btn btnRed"><span>$190,000$</span>원 결제하기</button>
+			</div>
+		</div>
+	</div>
+	<a href="javascript:;" class="closePop">팝업닫기</a>
+</div>
+
+
+</body>
+</html>
